@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Button</title>
     <style>
         @keyframes bounce {
 
@@ -108,7 +104,6 @@
 <script type="text/javascript">
     document.getElementById("whatsappWci").addEventListener('click', function (event) {
         window.dataLayer = window.dataLayer || [];
-        console.log(event)
         var params = new URLSearchParams(location.search);
         var gclid = params.get('gclid');
         if (!gclid) {
@@ -152,4 +147,5 @@
             })
     })
 </script>
+
 </html>
